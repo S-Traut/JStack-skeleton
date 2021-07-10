@@ -4,7 +4,9 @@
   "description": "A web skeleton for basic websites",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "backend": "cd backend && npm run develop",
+    "frontend": "cd frontend && npm run dev",
+    "develop": "concurrently 'npm run backend' 'npm run frontend'"
   },
   "author": "s-traut",
   "license": "MIT",
